@@ -1,7 +1,9 @@
 name: First Workflow
 on:
   workflow_dispatch:
-
+  pull_request:
+    branches:
+    - main
 jobs:
   job1:
     runs-on: ubuntu-latest
